@@ -24,7 +24,6 @@ function adicionarAmigo(){
     
         amigos.push(novo);
         exibirLista();
-        console.log(amigos);
         limpar();
     }
 }
