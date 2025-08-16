@@ -2,6 +2,7 @@
 
 Esse é um site simples onde o usuário digita uma lista de nomes que (não repetidos), e sorteia um nome aleatorio da lista;
 
+
 <h1 align="center">Documentação</h1>
 
 A estrutura de dados usada nesse projeto é um array simples, no qual apenas são inseridos elementos no final. Por ser um projeto simples, que vai apenas cumprir uma tarefa específica.  
