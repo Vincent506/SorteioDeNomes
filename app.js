@@ -1,20 +1,22 @@
 let amigos = [];
 
-
+//Função que serve para limpar o input da página HTML
 function limpar(){
     let trash = document.querySelector('input');
     trash.value = '';
 }
 
-
+//Função que insere um amigo ao array de sorteio(com alguns tratamentos de erro)
 function adicionarAmigo(){
     
     let novo = document.querySelector('input').value;    
+    //tratamento de erro para o usuario não inserir um campo vazio(sem nome)
     if (novo == "") {
         alert('Por Favor insira um nome');
         limpar();
         return;
     }else{
+        //tratamento de erro para o usuario não inserir nomes repetidos
         if (amigos.includes(novo)) {
         alert(`O nome ${novo} ja foi acidionado`);
         limpar();
@@ -27,7 +29,7 @@ function adicionarAmigo(){
         limpar();
     }
 }
-
+//Função que mostra o array em um campo da pagina
 function exibirLista() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = '';
@@ -39,7 +41,7 @@ function exibirLista() {
         lista.appendChild(elemento);
     }
 }
-
+//Função que sorteia um elemento aleatorio do array
 function sortearAmigo(){
 
     if (amigos.length<2) {
